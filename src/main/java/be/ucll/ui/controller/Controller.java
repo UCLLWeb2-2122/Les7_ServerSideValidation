@@ -39,13 +39,13 @@ public class Controller extends HttpServlet {
         String command = request.getParameter("command");
 
         switch (command) {
-            case "voegToeForm":
+            case "addForm":
                 destination = getVoegToeForm(request, response);
                 break;
-            case "overzicht":
+            case "overview":
                 destination = getOverzicht(request, response);
                 break;
-            case "voegToe":
+            case "add":
                 destination = getVoegToe(request, response);
                 break;
             default:

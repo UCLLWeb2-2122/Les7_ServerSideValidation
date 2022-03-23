@@ -11,14 +11,19 @@
 </head>
 <body>
 <div id="container">
-    <nav>
-        <ul>
-            <li><a href="Controller?command=home">Home</a></li>
-            <li><a href="Controller?command=zoekFormulier">Zoek</a></li>
-            <li><a href="Controller?command=overview">Overzicht</a></li>
-        </ul>
-    </nav>
-
+    <header>
+        <h1>
+            <img src="img/diertjesDuploKlein.jpg" alt="logo Mijn Huisdieren">
+            <span>Mijn huisdieren</span>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="Controller?command=home">Home</a></li>
+                <li><a href="Controller?command=overview">Overzicht</a></li>
+                <li><a href="Controller?command=addForm">Voeg toe</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <c:if test="${not empty errors}">
             <div id="error" class="alert alert-danger">
@@ -31,7 +36,7 @@
         </c:if>
         <h2>Voeg je huisdier toe</h2>
 
-        <form method="POST" action="Controller?command=voegToe" novalidate>
+        <form method="POST" action="Controller?command=add" novalidate>
 
             <p class="form-group">
                 <label class="control-label" for="naam">Naam:</label>
