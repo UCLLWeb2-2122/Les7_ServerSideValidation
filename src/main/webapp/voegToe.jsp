@@ -15,7 +15,6 @@
         <ul>
             <li><a href="Controller?command=home">Home</a></li>
             <li><a href="Controller?command=zoekFormulier">Zoek</a></li>
-            <li><a href="Controller?command=meestHongerige">Meest Hongerige</a></li>
             <li><a href="Controller?command=overview">Overzicht</a></li>
         </ul>
     </nav>
