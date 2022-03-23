@@ -3,7 +3,6 @@ package be.ucll.domain.db;
 import be.ucll.DomainException;
 import be.ucll.domain.model.Dier;
 
-
 import java.util.ArrayList;
 
 public class DierDB {
@@ -37,17 +36,6 @@ public class DierDB {
                 return dier;
         }
         return null;
-    }
-
-    public Dier zoekMeestHongerige() {
-        if (dieren.size() == 0)
-            return null;
-        Dier meestHongerige = dieren.get(0);
-        for (Dier dier : dieren) {
-            if (dier.getVoedsel() > meestHongerige.getVoedsel())
-                meestHongerige = dier;
-        }
-        return meestHongerige;
     }
 
 }

@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8"%>
+         pageEncoding="UTF-8" %>
 
 <!DOCTYPE html>
 <html>
@@ -11,9 +11,20 @@
 </head>
 <body>
 <div id="container">
-    <jsp:include page="header.jsp">
-        <jsp:param name="title" value="Home"/>
-    </jsp:include>
+    <header>
+        <h1>
+            <img src="img/diertjesDuploKlein.jpg" alt="logo Mijn Huisdieren">
+            <span>Mijn huisdieren</span>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="Controller?command=home">Home</a></li>
+                <li><a href="Controller?command=zoekFormulier">Zoek</a></li>
+                <li><a href="Controller?command=meestHongerige">Meest Hongerige</a></li>
+                <li><a href="Controller?command=overview">Overzicht</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <h2>Mijn liefste huisdieren</h2>
         <p>Maak kennis met mijn liefste huisdieren. Hoe heten ze, hoeveel
